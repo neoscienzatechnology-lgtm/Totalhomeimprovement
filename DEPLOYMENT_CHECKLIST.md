@@ -53,8 +53,8 @@ After deployment, test the following:
    - [ ] All content is readable
 
 3. **Services Page** (`/services.html`)
-   - [ ] All 6 services display correctly
-   - [ ] Anchor links work (#pintura, #carpintaria, etc.)
+   - [ ] All 8 services display correctly
+   - [ ] Anchor links work (#roofing, #decks, #renovations, etc.)
    - [ ] Content is properly formatted
 
 4. **Contact Page** (`/contact.html`)
