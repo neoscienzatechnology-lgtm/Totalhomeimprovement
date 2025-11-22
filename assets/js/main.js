@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
       
       // Validate name
       if (name && name.value.trim() === '') {
-        showError(name, 'Por favor, insira seu nome');
+        showError(name, 'Please enter your name');
         isValid = false;
       }
       
@@ -126,10 +126,10 @@ document.addEventListener('DOMContentLoaded', function() {
       if (email) {
         const emailValue = email.value.trim();
         if (emailValue === '') {
-          showError(email, 'Por favor, insira seu e-mail');
+          showError(email, 'Please enter your email');
           isValid = false;
         } else if (!isValidEmail(emailValue)) {
-          showError(email, 'Por favor, insira um e-mail válido');
+          showError(email, 'Please enter a valid email');
           isValid = false;
         }
       }
@@ -138,23 +138,23 @@ document.addEventListener('DOMContentLoaded', function() {
       if (phone && phone.value.trim() !== '') {
         const phoneValue = phone.value.trim();
         if (!isValidPhone(phoneValue)) {
-          showError(phone, 'Por favor, insira um telefone válido');
+          showError(phone, 'Please enter a valid phone number');
           isValid = false;
         }
       }
       
       // Validate service selection
       if (service && service.value === '') {
-        showError(service, 'Por favor, selecione um serviço');
+        showError(service, 'Please select a service');
         isValid = false;
       }
       
       // Validate message
       if (message && message.value.trim() === '') {
-        showError(message, 'Por favor, insira uma mensagem');
+        showError(message, 'Please enter a message');
         isValid = false;
       } else if (message && message.value.trim().length < 10) {
-        showError(message, 'A mensagem deve ter pelo menos 10 caracteres');
+        showError(message, 'Message must be at least 10 characters');
         isValid = false;
       }
       
@@ -189,8 +189,8 @@ document.addEventListener('DOMContentLoaded', function() {
   function isValidPhone(phone) {
     // Remove all non-numeric characters
     const cleanPhone = phone.replace(/\D/g, '');
-    // Valid if it has 10-11 digits (Brazilian format)
-    return cleanPhone.length >= 10 && cleanPhone.length <= 11;
+    // Valid if it has 10 digits (US format)
+    return cleanPhone.length === 10;
   }
   
   // Helper function to show success message
@@ -211,7 +211,7 @@ document.addEventListener('DOMContentLoaded', function() {
       z-index: 9999;
       animation: slideDown 0.3s ease-out;
     `;
-    successDiv.textContent = 'Mensagem enviada com sucesso! Entraremos em contato em breve.';
+    successDiv.textContent = 'Message sent successfully! We will contact you soon.';
     
     document.body.appendChild(successDiv);
     
@@ -281,14 +281,12 @@ document.addEventListener('DOMContentLoaded', function() {
     input.addEventListener('input', function(e) {
       let value = e.target.value.replace(/\D/g, '');
       
-      if (value.length <= 11) {
-        // Format: (XX) XXXXX-XXXX or (XX) XXXX-XXXX
-        if (value.length > 10) {
-          value = value.replace(/^(\d{2})(\d{5})(\d{4}).*/, '($1) $2-$3');
-        } else if (value.length > 6) {
-          value = value.replace(/^(\d{2})(\d{4})(\d{0,4}).*/, '($1) $2-$3');
-        } else if (value.length > 2) {
-          value = value.replace(/^(\d{2})(\d{0,5})/, '($1) $2');
+      if (value.length <= 10) {
+        // Format: (XXX) XXX-XXXX (US format)
+        if (value.length > 6) {
+          value = value.replace(/^(\d{3})(\d{3})(\d{0,4}).*/, '($1) $2-$3');
+        } else if (value.length > 3) {
+          value = value.replace(/^(\d{3})(\d{0,3})/, '($1) $2');
         } else if (value.length > 0) {
           value = value.replace(/^(\d*)/, '($1');
         }

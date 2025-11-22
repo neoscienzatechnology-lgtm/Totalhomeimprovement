@@ -1,240 +1,256 @@
-# Total Home Improvements - Website
+# Gauthier's Total Home Improvements - Website
 
-Um site moderno, responsivo e profissional para serviços de reforma e melhorias residenciais, desenvolvido para funcionar perfeitamente no GitHub Pages.
+A modern, responsive, and professional website for Gauthier's Total Home Improvements, a family-owned contracting business serving Seattle, Bellevue, Redmond, and Kirkland. Built to work perfectly on GitHub Pages.
 
-## 🌟 Características
+## 🌟 Features
 
-- **100% Estático**: HTML, CSS e JavaScript puro - sem necessidade de build ou servidor
-- **Responsivo**: Design adaptável para mobile, tablet e desktop
-- **Moderno**: Interface limpa e profissional com animações suaves
-- **Otimizado**: Carregamento rápido e performance otimizada
-- **Acessível**: HTML semântico com foco em acessibilidade
-- **SEO-Friendly**: Meta tags e estrutura otimizada para motores de busca
+- **100% Static**: Pure HTML, CSS, and JavaScript - no build process or server required
+- **Responsive**: Adaptive design for mobile, tablet, and desktop
+- **Modern**: Clean and professional interface with smooth animations
+- **Optimized**: Fast loading and optimized performance
+- **Accessible**: Semantic HTML with focus on accessibility
+- **SEO-Friendly**: Optimized meta tags and structure for search engines
 
-## 📁 Estrutura do Projeto
+## 📁 Project Structure
 
 ```
 Totalhomeimprovement/
 │
-├── index.html              # Página inicial
-├── about.html              # Página sobre a empresa
-├── services.html           # Página de serviços
-├── contact.html            # Página de contato
-├── README.md               # Este arquivo
+├── index.html              # Home page
+├── about.html              # About page
+├── services.html           # Services page
+├── contact.html            # Contact page
+├── README.md               # This file
 │
 └── assets/
     ├── css/
-    │   └── style.css       # Estilos principais
+    │   └── style.css       # Main stylesheet
     ├── js/
-    │   └── main.js         # JavaScript para interatividade
+    │   └── main.js         # JavaScript for interactivity
     └── img/
-        └── (imagens)       # Pasta para imagens do site
+        └── (images)        # Image folder
 ```
 
-## 🚀 Como Publicar no GitHub Pages
+## 🚀 How to Publish on GitHub Pages
 
-### Método 1: Via Interface do GitHub (Recomendado)
+### Method 1: Via GitHub Interface (Recommended)
 
-1. **Acesse as Configurações do Repositório**
-   - Vá para o repositório no GitHub
-   - Clique em "Settings" (Configurações)
+1. **Access Repository Settings**
+   - Go to the repository on GitHub
+   - Click on "Settings"
 
-2. **Configure o GitHub Pages**
-   - No menu lateral, clique em "Pages"
-   - Em "Source", selecione a branch principal (geralmente `main` ou `master`)
-   - Selecione a pasta raiz `/` (root)
-   - Clique em "Save"
+2. **Configure GitHub Pages**
+   - In the sidebar, click on "Pages"
+   - Under "Source", select the main branch (usually `main` or `master`)
+   - Select the root folder `/` 
+   - Click "Save"
 
-3. **Aguarde a Publicação**
-   - O GitHub levará alguns minutos para publicar o site
-   - Você verá uma mensagem com o URL do site: `https://[seu-usuario].github.io/Totalhomeimprovement/`
+3. **Wait for Publication**
+   - GitHub will take a few minutes to publish the site
+   - You'll see a message with your site URL: `https://[your-username].github.io/Totalhomeimprovement/`
 
-4. **Acesse Seu Site**
-   - Clique no link fornecido ou acesse diretamente
-   - O site estará disponível publicamente
+4. **Access Your Site**
+   - Click the provided link or access directly
+   - The site will be publicly available
 
-### Método 2: Via Linha de Comando
+### Method 2: Via Command Line
 
 ```bash
-# Clone o repositório (se ainda não tiver)
-git clone https://github.com/[seu-usuario]/Totalhomeimprovement.git
+# Clone the repository (if you haven't already)
+git clone https://github.com/[your-username]/Totalhomeimprovement.git
 cd Totalhomeimprovement
 
-# Faça suas alterações
-# ... edite os arquivos ...
+# Make your changes
+# ... edit files ...
 
-# Adicione as alterações
+# Add changes
 git add .
 
-# Commit das alterações
-git commit -m "Atualização do site"
+# Commit changes
+git commit -m "Update website"
 
-# Envie para o GitHub
+# Push to GitHub
 git push origin main
 ```
 
-Depois siga os passos do Método 1 para ativar o GitHub Pages.
+Then follow steps from Method 1 to activate GitHub Pages.
 
-## 🔧 Manutenção e Personalização
+## 🔧 Maintenance and Customization
 
-### Alterando Cores
+### Changing Colors
 
-Edite o arquivo `assets/css/style.css` e modifique as variáveis CSS no início:
+Edit the `assets/css/style.css` file and modify the CSS variables at the beginning:
 
 ```css
 :root {
-  --primary-color: #1e40af;      /* Cor principal */
-  --secondary-color: #f59e0b;    /* Cor secundária */
-  --accent-color: #10b981;       /* Cor de destaque */
-  /* ... outras cores ... */
+  --primary-color: #1e40af;      /* Primary color */
+  --secondary-color: #f59e0b;    /* Secondary color */
+  --accent-color: #10b981;       /* Accent color */
+  /* ... other colors ... */
 }
 ```
 
-### Adicionando Imagens
+### Adding Images
 
-1. Coloque suas imagens na pasta `assets/img/`
-2. Prefira usar formato WebP para melhor performance
-3. Otimize as imagens antes de adicionar (use ferramentas como TinyPNG)
-4. Adicione imagens no HTML com alt text:
+1. Place your images in the `assets/img/` folder
+2. Prefer WebP format for better performance
+3. Optimize images before adding (use tools like TinyPNG)
+4. Add images in HTML with alt text:
 
 ```html
-<img src="assets/img/sua-imagem.webp" alt="Descrição da imagem" loading="lazy">
+<img src="assets/img/your-image.webp" alt="Image description" loading="lazy">
 ```
 
-### Editando Conteúdo
+### Editing Content
 
-1. **Textos**: Edite diretamente nos arquivos HTML
-2. **Serviços**: Modifique `services.html`
-3. **Informações de Contato**: Atualize em `contact.html` e no footer de todas as páginas
-4. **Sobre a Empresa**: Personalize `about.html`
+1. **Text**: Edit directly in the HTML files
+2. **Services**: Modify `services.html`
+3. **Contact Information**: Update in `contact.html` and in the footer of all pages
+4. **About**: Customize `about.html`
 
-### Adicionando Novas Páginas
+### Adding New Pages
 
-1. Crie um novo arquivo HTML na raiz (ex: `portfolio.html`)
-2. Copie a estrutura de header e footer de uma página existente
-3. Adicione o link no menu de navegação em TODAS as páginas:
+1. Create a new HTML file in the root (e.g., `portfolio.html`)
+2. Copy the header and footer structure from an existing page
+3. Add the link in the navigation menu in ALL pages:
 
 ```html
 <ul class="nav-menu">
-  <li><a href="index.html">Início</a></li>
-  <li><a href="about.html">Sobre</a></li>
-  <li><a href="services.html">Serviços</a></li>
-  <li><a href="portfolio.html">Portfólio</a></li>  <!-- Nova página -->
-  <li><a href="contact.html">Contato</a></li>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="services.html">Services</a></li>
+  <li><a href="portfolio.html">Portfolio</a></li>  <!-- New page -->
+  <li><a href="contact.html">Contact</a></li>
 </ul>
 ```
 
-## 📱 Responsividade
+## 📱 Responsiveness
 
-O site é totalmente responsivo e funciona perfeitamente em:
+The site is fully responsive and works perfectly on:
 
 - **Mobile**: 320px - 767px
 - **Tablet**: 768px - 1023px
 - **Desktop**: 1024px+
 
-Os breakpoints são definidos no arquivo `assets/css/style.css`.
+Breakpoints are defined in the `assets/css/style.css` file.
 
-## 🎨 Recursos Utilizados
+## 🎨 Resources Used
 
-- **HTML5**: Estrutura semântica
-- **CSS3**: Estilização moderna com variáveis CSS, Grid e Flexbox
-- **JavaScript Vanilla**: Interatividade sem dependências
-- **Emojis**: Ícones visuais sem necessidade de bibliotecas externas
+- **HTML5**: Semantic structure
+- **CSS3**: Modern styling with CSS variables, Grid, and Flexbox
+- **Vanilla JavaScript**: Interactivity without dependencies
+- **Emojis**: Visual icons without needing external libraries
 
 ## ⚡ Performance
 
-- Sem dependências externas pesadas
-- Imagens otimizadas
-- CSS e JS minificáveis
-- Carregamento lazy de imagens
-- Animações CSS performáticas
+- No heavy external dependencies
+- Optimized images
+- Minifiable CSS and JS
+- Lazy loading of images
+- Performant CSS animations
 
-## ♿ Acessibilidade
+## ♿ Accessibility
 
-- HTML semântico
-- Labels em formulários
-- Alt text em imagens
-- Contraste adequado de cores
-- Navegação via teclado
-- ARIA labels onde necessário
+- Semantic HTML
+- Form labels
+- Alt text on images
+- Adequate color contrast
+- Keyboard navigation
+- ARIA labels where necessary
 
 ## 🔍 SEO
 
-- Meta tags descritivas
-- Open Graph para redes sociais
-- URLs amigáveis
-- Hierarquia de headings (H1, H2, H3)
-- Sitemap (pode ser adicionado)
+- Descriptive meta tags
+- Open Graph for social media
+- Friendly URLs
+- Heading hierarchy (H1, H2, H3)
+- Sitemap (can be added)
 
-## 📝 Lista de Verificação para Deploy
+## 📝 Pre-Deployment Checklist
 
-Antes de publicar, verifique:
+Before publishing, verify:
 
-- [ ] Todas as imagens estão otimizadas
-- [ ] Links internos estão funcionando
-- [ ] Informações de contato estão corretas
-- [ ] Formulário de contato está testado
-- [ ] Site está responsivo em diferentes tamanhos de tela
-- [ ] Não há erros no console do navegador
-- [ ] Meta tags estão preenchidas corretamente
-- [ ] Favicon está presente
+- [ ] All images are optimized
+- [ ] Internal links are working
+- [ ] Contact information is correct
+- [ ] Contact form is tested
+- [ ] Site is responsive on different screen sizes
+- [ ] No errors in browser console
+- [ ] Meta tags are properly filled
+- [ ] Favicon is present
 
-## 🛠️ Solução de Problemas
+## 🛠️ Troubleshooting
 
-### Site não está aparecendo no GitHub Pages
+### Site not appearing on GitHub Pages
 
-1. Verifique se o GitHub Pages está ativado nas configurações
-2. Confirme que a branch correta está selecionada
-3. Aguarde alguns minutos após fazer alterações
-4. Limpe o cache do navegador
+1. Verify GitHub Pages is activated in settings
+2. Confirm the correct branch is selected
+3. Wait a few minutes after making changes
+4. Clear browser cache
 
-### Menu mobile não está funcionando
+### Mobile menu not working
 
-1. Verifique se o arquivo `assets/js/main.js` está carregando
-2. Abra o console do navegador (F12) e veja se há erros
-3. Confirme que os elementos HTML têm as classes corretas
+1. Verify `assets/js/main.js` is loading
+2. Open browser console (F12) and check for errors
+3. Confirm HTML elements have the correct classes
 
-### Formulário não está enviando
+### Form not submitting
 
-1. O formulário atual é apenas demonstrativo
-2. Para funcionalidade real, integre com serviços como:
+1. The current form is demonstration only
+2. For real functionality, integrate with services like:
    - Formspree (https://formspree.io/)
    - Netlify Forms
    - EmailJS (https://www.emailjs.com/)
 
-### Imagens não estão carregando
+### Images not loading
 
-1. Verifique se os caminhos das imagens estão corretos
-2. Use caminhos relativos: `assets/img/nome-imagem.jpg`
-3. Confirme que as imagens existem na pasta correta
-4. Verifique maiúsculas/minúsculas nos nomes dos arquivos
+1. Verify image paths are correct
+2. Use relative paths: `assets/img/image-name.jpg`
+3. Confirm images exist in the correct folder
+4. Check uppercase/lowercase in file names
 
-## 🔄 Atualizações Futuras
+## 🔄 Future Updates
 
-Ideias para melhorias:
+Ideas for improvements:
 
-- [ ] Galeria de projetos/portfólio
-- [ ] Integração com formulário real (Formspree)
-- [ ] Blog com artigos sobre reformas
-- [ ] Depoimentos de clientes com fotos
-- [ ] Calculadora de orçamento
-- [ ] Chat ao vivo
-- [ ] Vídeos institucionais
+- [ ] Project/portfolio gallery
+- [ ] Real form integration (Formspree)
+- [ ] Blog with articles about home improvements
+- [ ] Client testimonials with photos
+- [ ] Budget calculator
+- [ ] Live chat
+- [ ] Institutional videos
 
-## 📞 Suporte
+## 📞 Support
 
-Para dúvidas sobre manutenção do site:
+For questions about website maintenance:
 
-1. Consulte a documentação do [GitHub Pages](https://docs.github.com/pt/pages)
-2. Veja tutoriais sobre HTML, CSS e JavaScript no [MDN Web Docs](https://developer.mozilla.org/pt-BR/)
-3. Use o [W3C Validator](https://validator.w3.org/) para validar seu HTML
+1. Consult the [GitHub Pages](https://docs.github.com/en/pages) documentation
+2. See tutorials on HTML, CSS, and JavaScript at [MDN Web Docs](https://developer.mozilla.org/)
+3. Use the [W3C Validator](https://validator.w3.org/) to validate your HTML
 
-## 📄 Licença
+## 📄 License
 
-Este projeto é um template customizado para Total Home Improvements.
+This project is a custom template for Gauthier's Total Home Improvements.
 
 ---
 
-**Desenvolvido com ❤️ para Total Home Improvements**
+**Developed with ❤️ for Gauthier's Total Home Improvements**
 
-*Última atualização: Novembro 2024*
+*Last updated: November 2024*
+
+## 📍 Contact Information
+
+**Gauthier's Total Home Improvements**
+- **Phone**: [206-600-0142](tel:2066000142)
+- **Email**: 
+  - [cs@gauthierstotalhomeimprovements.com](mailto:cs@gauthierstotalhomeimprovements.com)
+  - [corey@gthomeimprovements.com](mailto:corey@gthomeimprovements.com)
+- **Address**: 14118 73rd Pl NE Apt L207, Kirkland, WA 98034
+- **Service Areas**: Seattle, Bellevue, Redmond, Kirkland, and surrounding areas
+- **License**: GAUTHTH767JR
+- **Insured**: Up to $1,000,000
+
+---
+
+**Modern Craftsmanship, Old Fashioned Values**
